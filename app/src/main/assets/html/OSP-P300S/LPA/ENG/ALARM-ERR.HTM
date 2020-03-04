@@ -1,0 +1,4113 @@
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+</head>
+
+<HTML>
+<BODY><CENTER>
+<TABLE WIDTH="100%" BGCOLOR="BLUE" BORDER="0" CELLSPACING="0">
+<TR>
+<TD ALIGN="RIGHT"><FONT COLOR="FUCHSIA" SIZE="5"><B>ALARM & ERROR LIST (ERROR)</B></FONT></TD>
+</TR>
+</TABLE>
+<BR>
+</CENTER>
+
+<A NAME="5001"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5001</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Undetermined IGF DATA</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+        [IGF] or [One touch IGF] function key is pushed , and in terms
+       of IGF data from PLC unnotice, this alarm occurs.
+       <FONT color = "RED">[Measures to take]</FONT>
+       It confirms whether PLC is supposed to do data for IGF expert
+       wisdom through NC parameter window at the time of power
+       supply throwing in.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5002"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5002</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Load information file not found</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       When parameter setting tool was loaded, loading information
+       file was not found out.
+       Or file which meets a description in loading information
+       file did not exist.
+       <FONT color = "RED">[Character string]</FONT> An appropriate file name
+       <FONT color = "RED">[Probable Faulty Locations]</FONT> Install failure, a production
+        mistake, a specification code mistake
+       <FONT color = "RED">[Measures to take]</FONT> Reinstall,
+        Reproduction of install FD
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5004"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5004</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Error at Virus Protection or Remote Diagnosis</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       An error occured in Virus Protection System, or Remote
+       Diagnosis system.
+       <FONT color = "RED">[Code]</FONT> XXXX-YYYY ZZZZ
+         XXXX : the system that an error occurred
+         YYYY : the kind of the error
+         ZZZZ : additional (if necessary)
+        XXXX express one of the following items.
+         SRVC(service screen)
+         WUPD(windows update)
+         DSRM(data send and receive)
+         FSCN(file scanning)
+         RMNT(remote diagnosis)
+        YYYY express one of the following items.
+         0009 Cannot connect to the support server.
+         0010 Cannot connect to the WebEx server.
+         0014 Cannot resolve domain name.
+         -&gt;Possibly there are some trouble on networks.
+           Please confirm network settings of OSP and LAN
+           connection of the machine. 
+           If LAN is OK, abnormality of the internet line is
+           also thought about. Please check the internet
+           connection by web browsers on OSP.
+         YYYY case except the above
+         -&gt;There is a possibility that some system failure
+           occurred. Please contact local Service Center with
+           content of that code.
+        
+</PRE>
+<!-- ##' -->
+</BODY>
+</HTML>
+
+<HTML>
+<BODY>
+<A NAME="5200"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5200</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Main program execution</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       An attempt to select a program during the execution of a main
+       program. Or shape development was attempted in the cam turning
+       specification model.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT>
+        1-&gt;An attempt to select a program
+        2-&gt;An attempt to select a schedule program
+        3-&gt;An attempt to execute sequence number search
+        4-&gt;An attempt to execute restart
+        7-&gt;An attempt to execute shape development
+           (cam turning specification)
+        8-&gt;An attempt to execute Soft Jaw process
+       <FONT color = "RED">[Measures to Take]</FONT>
+        Select the program after resetting the NC.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5201"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5201</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Not found main program file</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       Main program file is not found.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT> 1
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+        Operation error
+       <FONT color = "RED">[Measures to Take]</FONT>
+        Designate a main program file name correctly.
+        Create a file	if there is no file.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5202"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5202</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Not found main program name</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       Main program name to be loaded is not found.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT> 1
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       Operation error
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Designate a main program file name correctly.
+       Create a file if there is no main file.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5203"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5203</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">No sub program</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       The subprogram specified by the part program is not found.
+       Or, though G code or M code macro command is specified in the
+       part program, the relevant subprogram is not set on
+       the *G CODE MACRO M CODE MACRO* setting screen in
+       the parameter setting mode.
+       <FONT color = "RED">[Character-string]</FONT> Subprogram name not found
+       <FONT color = "RED">[Code]</FONT> 1
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       1)Program creation error
+       <FONT color = "RED">[Measures to Take]</FONT>
+       1)Create a required subprogram.
+       <FONT color = "RED">[Referential Instruction Manual]</FONT>
+       Operation Manual
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5204"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5204</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Sub program name</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       Wrong subprogram name or subprogram name is not found.
+       <FONT color = "RED">[Character-string]</FONT> Record buffer called out
+       <FONT color = "RED">[Code]</FONT>
+       1-&gt;The subprogram name is not found in the record buffer
+          called.
+       2-&gt;Program name exceeds five characters including &quot;O&quot;.
+       <FONT color = "RED">[Probable Faulty Locations]</FONT> Program error
+       (1)N100 CALL
+       (2)N100 CALL OABCDE
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Check program and designate subprogram call command correctly.
+       <FONT color = "RED">[Related specifications]</FONT> Subprogram specification
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5205"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5205</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Schedule program execution</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       The operations indicated below have been attempted during
+       the execution of a schedule program.
+       * Program selection
+       * Schedule program selection
+       * Sequence number search
+       * Restart
+       Or shape development was attempted in the cam turning
+       specification model.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT>
+       1-&gt;An attempt to select a program
+       2-&gt;An attempt to select a schedule program
+       3-&gt;An attempt to execute sequence number search
+       4-&gt;An attempt to execute restart
+       7-&gt;An attempt to execute shape development
+          (cam turning specification)
+       8-&gt;An attempt to execute Soft Jaw process
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       Operation error
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Reset the NC first before attempting the operations above.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5206"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5206</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Not found schedule program file</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       The schedule program file is not found.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT> 1
+       <FONT color = "RED">[Probable Faulty Locations]</FONT> Operation error
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Designate a schedule program name correctly.
+       Or, create a schedule program file if not available.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5207"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5207</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Program search</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       In the sequence number search operation, the block assigned
+       with the sequence number designated has not been found.
+       The program search command is given under alarm occurrence
+       state.
+       <FONT color = "RED">[Code]</FONT>
+       1-&gt;Main program has not been loaded or an alarm has occurred.
+       2-&gt;Designated sequence name not found.
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       Program error or operation error
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Check whether or not an alarm has occurred.
+       Check whether or not a main program has been loaded.
+       Check whether or not the designated sequence number exists.
+       Check the designated sequence name and the sequence name
+       in the program.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5208"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5208</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Schedule program search</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       The selected schedule program is not found.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT> 1
+       <FONT color = "RED">[Probable Faulty Locations]</FONT> Operation error
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Check to be sure that the required schedule program is in
+       the memory using the DIR command.  Then, select the program
+       again.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5209"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5209</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Program end code</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       The end of program code is not specified at the end of a file.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT>
+       1-&gt;No end code (M02, M30) in a main program
+       2-&gt;No end code (RTS) in a subprogram
+       3-&gt;No end code in a subprogram in MSB
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       Error in making program
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Check the end code of the main or subprogram.  With the
+       example above, since end code RTS is not specified,
+       it is necessary to specify it.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5210"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5210</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Program stack overflow</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       The number of subprogram names called by the CALL or MODIN
+       command in the main program, subprogram or maker subprogram
+       or maker subprogram has exceeded 128.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT> 1
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       Program error
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Delete unnecessary subprograms.
+       Make a program taking this limit into consideration.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5211"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5211</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Program buffer overflow</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       The program is too large to be stored in the program buffer.
+       <FONT color = "RED">[Code]</FONT>
+       1-&gt; Program is too large. Or, the subprogram to be
+           registered in the library is larger than the library
+           program buffer size.
+       2-&gt; MSB is too large.
+       3-&gt; MSB is unusable because of limited memory size.
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       1)Faulty program
+       <FONT color = "RED">[Measures to Take]</FONT>
+       1)Create a program within the program buffer size
+         (standard: 30 m).
+       2)If this alarm occurs when registering the library program,
+         respecify and enlarge the library program buffer size.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5212"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5212</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Edit buffer empty</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       No data in the edit buffer when edit data is to be recovered
+       using the option R function at the beginning of the editing.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT> None
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       Operation error
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Recovery is impossible.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5213"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5213</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Edit buffer move</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       Movable range is exceeded during edit buffer moving operation.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT>
+       XXXXXXXX-&gt;End point of the data
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5214"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5214</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Edit buffer overflow</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       The edit buffer is full.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT>
+       XXXX-&gt;Address in edit buffer to which an access has been
+             attempted exceeding the edit buffer area
+       <FONT color = "RED">[Probable Faulty Locations]</FONT> Operation error
+       <FONT color = "RED">[Operation Example]</FONT>
+       An attempt to make a program which exceeds the edit buffer
+       size.
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Make a program within the program buffer size
+       (standard:  30 m).
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5215"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5215</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Record buffer overflow</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       During program editing, editing operation becomes impossible
+       due to wrong file data.
+       * The number of characters in one block exceeds the limit of
+         buffer memory.
+       <FONT color = "RED">[Character-string]</FONT>
+       One record which has caused an error, or None
+       <FONT color = "RED">[Code]</FONT>
+       1-&gt;Error has occurred when one record has been read from
+          the edit buffer.
+       2-&gt;Error has occurred when one record has been read from
+          the screen buffer.
+       3-&gt;Invalid work name is set.
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       Faulty program editing operation
+       <FONT color = "RED">[Program Example]</FONT>Refer to the example above.
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Correct the file as needed.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5216"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5216</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Record buffer move range</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       Movable range is exceeded during edit buffer moving.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT>
+       1-&gt;Move end point &lt; Move start point
+       2-&gt;Movement to a point upstream the record buffer
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       This error does not occur usually.
+       <FONT color = "RED">[Measures to Take]</FONT>
+       After pressing EDIT AUX key, edit the program again.
+       This recovery is possible by option R command.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5217"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5217</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Sequence NO. direct</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       In the sequence number arrange command, there is an error in
+       operand.
+       <FONT color = "RED">[Code]</FONT>
+       1 -&gt; The start sequence number or the sequence number increment
+            value is a 4-digit or larger number.
+       2 -&gt; No delimiting comma
+       3 -&gt; An operand is empty.
+       4 -&gt; The format in the operand field has an error.
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       1) Operation error
+       <FONT color = "RED">[Measures to Take]</FONT>
+       1) Input the operand correctly.
+       <FONT color = "RED">[Referential Instruction Manual]</FONT>
+       Operation manual
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5218"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5218</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Sequence NO. over</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       A sequence number exceeds three digits during sequence number
+       allocation steps.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT>
+       Hexadecimal number of a sequence number allocated
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       The number of sequences to which sequence numbers are to be
+       assigned is too much.
+       Increment value for sequence number assignment is too much.
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Designate the beginning sequence number and an increment
+       value taking the number of sequences to be assigned with
+       the sequence number into consideration.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5219"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5219</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Screen buffer overflow</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       The screen buffer for editing is full.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT>
+       None-&gt;No screen area record in screen buffer
+       1-&gt; The size of the data transferred to the screen buffer is
+           greater than the area designated in the edit buffer.
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       This alarm does not usually occur.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5220"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5220</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Tape vertical check</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       In the TV check for one block of read tape, the number of
+        data in the block is odd.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT>
+       XX-&gt;Data which has caused tape TV check error
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       Error in punching tape
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Make correct tape TV data.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5221"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5221</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">No tape data</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       There is no data although verify has been attempted.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT> None
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       Error in punching tape
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Make tape correctly.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5222"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5222</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Tape parity</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       Tape parity unconformity
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT>
+       XX-&gt;Data which caused the parity error
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       Error in punching tape
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Check the tape
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5223"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5223</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Tape file name</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       Wrong tape file name - illegal characters used,
+       too many characters, etc.
+       <FONT color = "RED">[Character-string]</FONT> Commanded file name
+       <FONT color = "RED">[Code]</FONT>
+       5-&gt;The number of characters in a file name is more than 19.
+       6-&gt;The file name and extension are not marked off using &quot;,&quot;.
+       7-&gt;The first character of the file name and extension is
+          other than alphabet.
+       <FONT color = "RED">[Probable Faulty Locations]</FONT> Error in punching tape
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Read tape on which file name is punched correctly.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5224"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5224</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Tape read verify</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       Mismatch between taped information and file information
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT> XXYY
+       XX-&gt;Information at the memory location where verify error has
+           occurred
+       YY-&gt;Information in the tape block where verify error has
+           occurred
+       <FONT color = "RED">[Probable Faulty Locations]</FONT> Error in tape reading operation
+       <FONT color = "RED">[Measures to Take]</FONT> Check the tape and read it again.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5225"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5225</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Tape end code unfit</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       The &quot;end-of-tape&quot; code does not agree with the one designated
+       by the parameter.
+       OPTIONAL PARAMETER (EXTERNAL I/O) Program end code
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5226"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5226</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Illegal tape code</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       Special code is punched on tape.
+       The following settings are possible by OPTIONAL PARAMETER.
+       OPTIONAL PARAMETER (EXTERNAL I/O)
+        Tape special code alarm
+        Ignore tape special code
+       No.7 No.6
+        0     0    Special codes are read as they are.
+       0,1    1    Error occurs when a special code is used.
+        1     0    Special codes are ignored.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT>
+       XX-&gt;Data which has caused an error
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       Wrong data (Code not used by EIA or ISO system is  read.)
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Check the tape punched data whether codes not allowed
+       by the EIA or ISO coding system are present.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5227"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5227</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Tape data</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       Error during tape reading or verifying
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT>
+       Frequencies of error occurrence in hexadecimal number
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       Faulty tape data
+        (code not used in EIA/ISO code used; parity error)
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Check the punched data; are there any codes which are not
+       used in the EIA or ISO code system?
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5228"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5228</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Invalid EIA code</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       In file punch and read operations, characters not usable
+       as the EIA code are found.  ($, *, =, [, ], etc.)
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT>
+       XX-&gt;The data which has caused an error
+       <FONT color = "RED">[Probable Faulty Locations]</FONT> Data error
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Check whether the code other than the codes used in the EIA
+       code system is used.For codes often used but not defined by
+       the EIA coding system, Bit patterns corresponding to them
+       can be set at parameter (Bit) No. 26 through No. 30.
+       By setting the Bit pattern for special codes, they are read
+       or punched without causing an error.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5229"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5229</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Input file name not same</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       Mismatch between the input file name and the designated file
+       name
+       <FONT color = "RED">[Character-string]</FONT> Tape file name (input file name)
+       <FONT color = "RED">[Code]</FONT> None
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       Mismatch between the file name on tape and the designated
+       input file name for read or verify operation.
+       <FONT color = "RED">[Measures to Take]</FONT> Designate the input file name correctly.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5230"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5230</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">No file data</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       An attempt is made to read the tape not containing file data.
+       Tape format:
+       The tape which has been read does not conform to the format
+       indicated above, and portion (5) is not contained.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT> None
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       Error in making NC tape.
+       Tape like the one shown at the below is made and read.
+       <FONT color = "RED">[Measures to Take]</FONT> Make a correct tape.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5231"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5231</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">File record read</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       When a file has been read in loading the file into program
+       buffer or program punch out operation, the given command
+       cannot be executed since the file data is faulty.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT>
+       1-&gt;One record contains more than 156  characters
+       2-&gt;File end and record end do not match in file reading
+       <FONT color = "RED">[Probable Faulty Locations]</FONT> Error in file editing
+       <FONT color = "RED">[Measures to Take]</FONT> Correct wrong file data
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5232"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5232</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">File attribute</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       The input or output file is not the sequential file
+       (part program) when option A is designated for the copy
+       command.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT>
+       1-&gt;Input file is not the sequential file.
+       2-&gt;Output file is not the sequential file.
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       Error in designation of input/output file name for copy
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Check the file name and designate correct file name
+       (part program).
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5233"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5233</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">System data</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       During execution of transfer command, an error occurred
+       in file operation by the SP service routine.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT> XXYYYYYY
+       XX:
+       1-&gt; The NC received EOF without reading even one character
+           from the file.
+       2-&gt; For indirect data transfer, the file buffer size is not
+           2048 bytes.
+       3-&gt; The NC received EOF in the middle of reading data from
+           the file.
+       5-&gt; The NC tried to open the write-protected file in
+           sequential output mode.
+       6-&gt; There is an inconsistency in four kinds of input
+           parameters required
+       for file opening: file open mode (D2), direct/indirect
+       		  transfer (file buffer address = 0 / 0),
+       		  OSP/IBM format file attribute.
+       -&gt; Refer to the error check table of the input parameters
+          for file opening.
+       9-&gt; A wrong device name is specified.
+       10-&gt;A wrong file name is specified.
+       11-&gt;The directory file was not found.
+       12-&gt;Attempt was made to execute PUT command on the file
+           opened in input mode or GET command on the file opened
+           in output mode.
+       YYYYYY-&gt;Return address of the check routine which caused this
+       	error
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5234"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5234</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Extended name</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       Extension is other than SS, SU, MI, SD, or space for files
+       registered in the IBM-formatted media device.
+       <FONT color = "RED">[Character-string]</FONT> File name
+       <FONT color = "RED">[Code]</FONT> None
+       <FONT color = "RED">[Probable Faulty Locations]</FONT> Operation error
+       <FONT color = "RED">[Measures to Take]</FONT> Use only allowable extensions.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5235"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5235</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Device name</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       Wrong device name is designated.
+       Or a device name designated for renaming differs from
+       the source device name.
+       Or, a device name that can not be used by a control method
+       of parameter setting  was designated.
+       <FONT color = "RED">[Character-string]</FONT> Designated device name or None
+       <FONT color = "RED">[Code]</FONT>
+       1-&gt;Mismatch of device names before and after renaming
+       2-&gt;Though it was not DC-code control or RS/CS control,
+          &quot;READ&quot; or &quot;VERIFY&quot;  was performed.
+       3-&gt;Though it was not DC-code control or lady signal inside
+          generation, &quot;PUNCH&quot; was performed.
+       None-&gt;In the case of expecting for above-mentioned
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       1)Error in spelling of the input device name
+       2)Designation of device name whose use is not allowed.
+       3)Designation of device name differing from the source device
+         name (RENAME command)
+       4)The control method which can not be used in a designated
+         device name was set in parameter.
+       <FONT color = "RED">[Measures to Take]</FONT>
+       1)Refer to the operation manual.
+       2)In the RENAME operation, designation of device name for
+         the changed name is not required.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5236"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5236</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">RS232C channel in use</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       The RS232C channel specified is being used for other job.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT>
+       1-&gt;CN0: (TT:)
+       2-&gt;CN1:
+       3-&gt;CN2:
+       4-&gt;CN3:
+       <FONT color = "RED">[Probable Faulty Locations]</FONT> Operation error
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Use another RS232C channel or wait until the job which uses
+       the RS232C designated completes.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5237"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5237</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">RS232C device read</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       Data reading from the RS232C device is impossible, or an
+       error has occurred with the RS232C device.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT>
+       FFFFFF-&gt;No data can be read from RS232C device.
+       XX-&gt;Error
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       Defective RS232C device or problem in wiring
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Check the RS232C device.
+       Check the setting of RS232C related parametes of NC.
+       Check the wiring.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5238"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5238</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">RS232C device not ready</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       During communication through the RS232C interface in the PIP
+       or DNC mode, the DR signal has been interrupted for the same
+       duration set by parameter
+        (OPTIONAL PARAMETER (RS232C) RS232C busy time
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT> 0 - 3 (RS232C device signal)
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       Power supply to the mating station is not turned on.
+       RS232C interface of mating station or OSP is faulty.
+       Faulty communication cable
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Check and turn on power supply for the mating station.
+       Check the RS232C interface of the mating station or OSP.
+       Check the communication cable.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5239"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5239</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">RS232C read buffer overflow</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       Overflow with the read buffer for the PIP or DNC equipped
+       with DC code.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT> None
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       Data transmission from the mating station is not stopped
+       although DC3 code is sent from the CNC.
+       RS232C interface of the mating station or CNC is faulty.
+       Faulty communication cable
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Check if the data transmission from the mating station stops
+       by sending the DC3 code to it.
+       Check the RS232C interface of CNC or the mating station.
+       Check the communication cable.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5240"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5240</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">RS232C ready interrupt time out</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       Transmission of data from the mating station has been
+       interrupted for the same duration set by parameter
+       during the communication in the PIP or DNC mode.
+       <FONT color = "RED">[Parameter]</FONT>
+       OPTIONAL PARAMETER (RS232C) RS232C busy time
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       RS232C interface of the mating station or OSP is faulty.
+       Faulty communication cable
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Check the RS232C interface of the mating station or OSP.
+       Check the communication cable.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5241"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5241</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">DC code</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       DC code other than receive waiting DC code has been received
+       in the DC code control communication.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT>
+       X-&gt;Received DC code
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       The mating device or RS232C interface is faulty.
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Check the RS232C interface or mating device.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5242"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5242</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">DNC device</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       RS232C device number set by parameter is wrong
+       (other than 0 - 3).  However, in actual setting, setting of
+       a number other than 0 - 3 is not accepted and thus this
+       alarm will not occur.
+       <FONT color = "RED">[Parameter]</FONT>
+       OPTIONAL PARAMETER (DNC-A) DNC input/output device number
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       Setting of DNC input/output device number
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Change the setting to a value from 0 to 3.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5243"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5243</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">DNC verify</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       A verify error has occurred in DNC when verifying.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT>
+       2-&gt;Reception NC data still exists although the file is over.
+       1-&gt;File still exists although reception NC data is over.
+       Other than above-&gt;The number of unmatched characters found
+       		  through comparison between reception data
+       		  and file
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       NC program data contents
+       Wrong program is used for verify operation.
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Correct the program data contents.
+       Check the name of program (or file) to be verified.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5244"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5244</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">DNC backup file name nothing</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       During OUTPUT and VERIFY in the DNC mode, the backup file name
+       is not found when a backup file name is specified with both
+       storing and requesting file names and extensions omitted.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT> None
+       <FONT color = "RED">[Probable Faulty Locations]</FONT> Operation error
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Designate the file name to be output or verified.
+       <FONT color = "RED">[Related Specifications]</FONT> DNC-C
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5245"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5245</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">DNC NC program not found</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       NC program requested in the DNC mode (INPUT or VERIFY command)
+       is not found in the host computer.
+       <FONT color = "RED">[Character-string]</FONT> Requested file name
+       <FONT color = "RED">[Code]</FONT> None
+       <FONT color = "RED">[Probable Faulty Locations]</FONT> Operation error
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Request the program again after confirming the file names
+       present in the host computer.
+       <FONT color = "RED">[Related Specifications]</FONT> DNC-C
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5246"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5246</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">DNC file name not same</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       During INPUT and VERIFY in the DNC mode, the name of the file
+       requested to the host computer does not match the name of the
+       file received.
+       <FONT color = "RED">[Character-string]</FONT> Received file name
+       <FONT color = "RED">[Code]</FONT> None
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       Error in processing at the host computer
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Check the processing operation of the host computer.
+       <FONT color = "RED">[Related Specifications]</FONT> DNC-C
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5247"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5247</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">DNC set condition</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       An inconsistency is found in the set diagnosis period within
+       the DNC-C communication parameter.
+       Setting standard
+       TM6 &lt; TM1
+       TM7 &lt; TM1
+       TM1 &lt; TM9
+       TM4 &lt; TM2
+       TM3 &lt; TM1
+       TM5 &lt; TM1
+       (For TM*, refer to the DNC-C instruction manual.)
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT> None
+       <FONT color = "RED">[Probable Faulty Locations]</FONT> Operation error
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Set the data meeting the conditions specified above.
+       <FONT color = "RED">[Related Specifications]</FONT> DNC-C
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5248"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5248</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">DNC transmitting</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       During transmission with the host computer, execution of
+       unexecutable command has been attempted.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT>
+       1-&gt; Execution of the following commands has been attempted
+           during NC program reverse transmission in the independent
+           mode.
+            Program selection
+            Schedule program selection
+            Number search by placing cursor
+            Schedule program search
+            Standard/enlargement scale setting for animation
+            Restart
+       <FONT color = "RED">[Probable Faulty Locations]</FONT> Operation error
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Wait until the reverse program transmission is completed.
+       (Wait until the DATA COMMUNICATE lamp goes off.)
+       <FONT color = "RED">[Related Specifications]</FONT> DNC-C
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5249"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5249</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">DNC answer time over</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       With the INPUT, VERIFY, DATA INPUT and DATA VERIFY operations,
+       text response from the host computer has not been obtained for
+       a duration set by parameter (word) No. 57.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT>
+       1-&gt; No text response
+       2-&gt; In all data input or all data verify operation,
+           data number which cannot be designated is designated.
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       Response time at the host computer is greater than the period
+       set by parameter.
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Re-set timer data at parameter No.52 .
+       <FONT color = "RED">[Related Specifications]</FONT> DNC-C
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5250"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5250</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">FMS coupling mode</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       In the automatic operation mode with the DNC-C2, C3
+       specifications, the following operations have been attempted.
+       - Program selection
+       - Schedule program selection
+       - Number search
+       - Number search by placing cursor
+       - Restart
+       - Schedule program search
+       - Animation scale setting
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT> None
+       <FONT color = "RED">[Probable Faulty Locations]</FONT> Operation error
+       <FONT color = "RED">[Measures to Take]</FONT>
+       After changing the operation mode to the independent or
+       interruption mode, carry out the required operation again.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5251"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5251</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">DNC can not transmit</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       A batch transfer of an NC program is attempted while
+       the DNC-C is not ready for communication.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT>
+       1-&gt;The attempt is made during communication alarm.
+       2-&gt;DNC communication is OFF.
+       3-&gt;Interrupt mode is not established.
+          (only for DNC-C3 specification)
+       4-&gt;Ready status is not established.
+          (only for DNC-B specification)
+       <FONT color = "RED">[Probable Faulty Locations]</FONT> Operation error
+       <FONT color = "RED">[Measures to Take]</FONT>
+       1-&gt;Reset the communication mode.
+       2-&gt;Turn the communication ON/OFF switch to ON and
+          then turn on power supply again.
+       3-&gt;Select the interruption mode.
+       4-&gt;Wait until the ready status is established.
+       <FONT color = "RED">[Related Specifications]</FONT> DNC-B, C
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5252"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5252</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Buffer operation mode</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       When buffer operation is turned ON or during buffer operation
+       in the DNC-B mode, one of the following operations has been
+       attempted. (common to protocol A, B)
+       a) NC program batch transfer
+          (disabled only for remote operation)
+       b) Sequence number search
+       c) Sequence number search by placing cursor
+       d) Schedule program sequence No. search
+       e) Schedule program selection
+       f) Program selection
+          (only for remote operation method (2) in protocol A)
+       g) Standard/enlargement scale setting for animation
+       h) When carrying out program selection in remote operation
+          method (2) in protocol A, main program name or subprogram
+          name has been specified.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT>
+       1-&gt;An attempt to execute a) is made.
+       2-&gt;An attempt to execute b) - f) is made.
+       3-&gt;An attempt to execute h) is made.
+       4-&gt;An attempt to execute g) during remote operation is made.
+       <FONT color = "RED">[Probable Faulty Locations]</FONT> Operation error
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5253"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5253</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">DNC set impossible</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       An attempt to set the text not usable for communication
+       parameter of DNC-C specification has been made.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT> None
+       <FONT color = "RED">[Probable Faulty Locations]</FONT> Operation error
+       <FONT color = "RED">[Measures to Take]</FONT>
+       The communication parameter to be set cannot be used for
+       the DNC-D specification.
+       <FONT color = "RED">[Related Specifications]</FONT>
+       DNC-C
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5254"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5254</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">DNC data kind</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       In the data input, data output, and data verify operations in
+       the DNC-C mode, the data number which cannot be designated is
+       designated.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT> None
+       <FONT color = "RED">[Probable Faulty Locations]</FONT> Operation error
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Designate the data number in the range of 0 - 5 and
+       the one which is allowed by the specification selected.
+       <FONT color = "RED">[Related Specifications]</FONT> DNC-C
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5255"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5255</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">DNC data range</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       In the data input, data output, and data verify operations in
+       the DNC mode, wrong data number is designated in the request
+       or transmission data.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT>
+       1-&gt; An error in the data designation format
+       2-&gt; An attempt is made to designate more than one range
+           for the same data (same turret).
+       3-&gt; The following conditions are not satisfied:
+           1 
+       4-&gt; The data for B turret is designated on the one-saddle
+           model.
+       <FONT color = "RED">[Probable Faulty Locations]</FONT> Operation error
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Enter the correct format number and the correct data number.
+       <FONT color = "RED">[Related Specifications]</FONT> DNC-C
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5256"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5256</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Input data overflow</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       Input data size is too large or too small.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT>
+       XXXXXXXX-&gt; The maximum and minimum values that can be set are
+       	   indicated by hexadecimal numbers.
+       	   Added value is displayed when the control is
+       	   provided with the adding limit.
+       	   The operation error status is displayed for common
+       	   variables.
+       <FONT color = "RED">[Probable Faulty Locations]</FONT> Operation error
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Input a numerical value within the allowable range.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5257"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5257</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Number figure</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       Data set at the data setting screen is not correct.
+       The number of digits of the set data exceeds 8 for integer
+       type data and real number type data.
+       Note that data of up to 9 digits is allowed only for APA
+       offset data.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT> The acceptable number of digits
+       1-&gt;Bit data contains decimal points.
+       <FONT color = "RED">[Probable Faulty Locations]</FONT> Data setting error
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Set the data correctly.
+       The number of digits must be within the allowable range.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5258"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5258</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Number character data</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       Data set at the data setting screen is not correct.
+       Characters other than &quot;0&quot; and &quot;1&quot; are contained in parameter
+       Bit data.
+       Characters other than numerical values are contained in
+       integer type data and real number type data.
+       Real number type data contains two or more decimal points.
+       <FONT color = "RED">[Character-string]</FONT>
+       Character which has caused the error or none
+       <FONT color = "RED">[Code]</FONT>
+       XX-&gt; ASCII code
+           (Bit-string, decimal code with a decimal point)
+            of a character causing an error
+        1-&gt; Illegal character in other than Bit-string or decimal
+            code with a decimal point
+       <FONT color = "RED">[Probable Faulty Locations]</FONT> Data setting error
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Set the data correctly.
+       Set the correct numerical value.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5259"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5259</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Decimal point</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       The decimal point is specified for the data which must be an
+       integer, or decimal point position is improper.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT> Position of the decimal point specified
+       <FONT color = "RED">[Probable Faulty Locations]</FONT> Operation error
+       <FONT color = "RED">[Measures to Take]</FONT> Input the data correctly.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5260"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5260</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Command impossible</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       ADD or CAL command is not allowed for the data to be set.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT>
+       1-&gt;An attempt to execute ADD command
+       2-&gt;An attempt to execute CAL command
+       <FONT color = "RED">[Probable Faulty Locations]</FONT> Operation error
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Set the data using other command, such as SET.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5261"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5261</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">CAL command impossible</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       An operation attempted to calculate the data using
+       the calculation function was incorrect.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT>
+       1-&gt;The CAL command is executed during the execution
+          of a main program
+       <FONT color = "RED">[Probable Faulty Locations]</FONT> Operation error
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Wait until the completion of program execution or reset
+       the NC, then calculate the data again.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5263"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5263</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Data calculation</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       An error occurred during numerical operation for the input
+        data.
+       <FONT color = "RED">[Object]</FONT> None
+       <FONT color = "RED">[Character-string]</FONT> Character-string including an error
+       <FONT color = "RED">[Code]</FONT> Refer to operation function manual.
+       <FONT color = "RED">[Probable Faulty Locations]</FONT> Wrong formula has been input.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5264"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5264</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Table data</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       This alarm shows the abnormality in NC internal data and
+       is not caused by normal NC operations.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT> None
+       <FONT color = "RED">[Probable Faulty Locations]</FONT> Defective software
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5265"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5265</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Stroke end limit over</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       Error in setting variable limit data (work coordinate system,
+       machine coordinate system) with user parameter
+       When the variable limit data is set on the machine coordinate
+       system, the set position is outside the travel end position.
+       When the variable limit data is set on the work coordinate
+       system, the set data is first converted into the limit value
+       on the machine coordinate system; after the conversion,
+       the set position is outside the travel end position.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT> The exceed amount in a hexadecimal number
+       <FONT color = "RED">[Probable Faulty Locations]</FONT> Data setting error
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Check the travel end position value and change the variable
+       limit data so that it is within the axis travel range.
+       With the example above, variable limit position is outside
+       the travel end limit by 3 mm.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5266"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5266</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Number of screen</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       When searching a required data number on the check data
+       display screen, a negative value or a value with decimal point
+       is entered as an item number and a page number.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT> None
+       <FONT color = "RED">[Probable Faulty Locations]</FONT> Operation error
+       <FONT color = "RED">[Measures to Take]</FONT> Enter a correct number.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5267"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5267</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">OUT command</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       The output command is designated in a worng format or the set
+       value exceeds the symbol size.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT>
+       1-&gt; The specified symbol was not found.
+       2-&gt; The set value is larger than the symbol size.
+       3-&gt; The format is wrongly specified. (The set value and
+           the symbol are not marked off by a comma &quot;,&quot;.)
+       4-&gt; The format is wrongly specified.
+           (No symbol name is entered.)
+       <FONT color = "RED">[Probable Faulty Locations]</FONT> Operation error
+       <FONT color = "RED">[Measures to Take]</FONT> Enter a correct output command.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5268"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5268</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Time data</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       Wrong time data specified
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT> 1
+       <FONT color = "RED">[Probable Faulty Locations]</FONT> Error in time data designation
+       <FONT color = "RED">[Measures to Take]</FONT> Designate the time data correctly.
+       Designation of hour:minute:
+         6:12 (6 hours 12 minutes)
+       Designation of hour:minute:second
+         2:6:28 (2 hours 6 minutes 28 seconds)
+       <FONT color = "RED">[Related Specifications]</FONT>
+       NC operation monitor Tool life management, etc.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5270"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5270</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Program execute</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       An attempt to switch the graphic display mode between ENLARGE
+       and STANDARD during program execution
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT> 1
+       <FONT color = "RED">[Probable Faulty Locations]</FONT> Operation error
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Change display mode after resetting the NC.
+       <FONT color = "RED">[Related Specifications]</FONT> Graphic
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5271"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5271</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Auto area set execute</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       After automatic scale setting of the standard screen for
+       graphic function, an error occurres during null reading
+       of part program.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT>
+       1-&gt;Automatic scale setting was attempted in a mode other
+          than the automatic operation mode, during alarm
+          occurrence, in A/B independent operation mode, or
+          before program selection.
+       2-&gt;NC was reset during automatic scale setting.
+       3-&gt;The part program does not include the slant mathining
+          mode command having the inclined angle that corresponds
+          to the graphic screen rotation angle.
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       Operation error
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Carryout automatic scale setting using care not to cause
+       any of the above errors.
+       <FONT color = "RED">[Related Specifications]</FONT>
+       Graphic
+       <FONT color = "RED">[Reference manual]</FONT>
+       Instruction Manual for Graphic
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5272"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5272</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Scale factor over</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       An attempt is made to set scale factor for graphic display
+       outside the range of 50 to 1/50
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT>
+       XXXXXXXX-&gt;Hexadecimal number of size for one dot corresponding
+       	  to the scale set.
+       <FONT color = "RED">[Probable Faulty Locations]</FONT> Operation error
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Scale setting range is as indicated below:
+        Standard page
+          1/50 - 2
+        Enlarged page
+          1/50 - 50
+       Set the scale within the range indicated above.
+       <FONT color = "RED">[Related Specifications]</FONT> Graphic
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5273"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5273</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Not found pitch comp. data file</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       Pitch compensation data file is not found in the designated
+       device or file size is different when pitch error compensation
+       data is to be backed up.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT>
+       1-&gt;Pitch error compensation data file not found
+       2-&gt;Pitch error compensation data file size different
+       <FONT color = "RED">[Probable Faulty Locations]</FONT> Operation error
+       <FONT color = "RED">[Measures to Take]</FONT>
+       After reinstalling the pitch error compensation data file
+       to the memory, write the compensation data again.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5274"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5274</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">NC LOB memory load</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       Failure in attempt to read the load object file from
+       the memory in the program operation.
+       <FONT color = "RED">[Character-string]</FONT> Read character string or none
+       <FONT color = "RED">[Code]</FONT>
+       1-&gt;File to be loaded is not found.
+       2-&gt;File attribute is not LOB1.
+       3-&gt;Address for loading is wrong.
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       Although the specification codes corresponding to the tape
+       convert and data input/output function are set,
+       corresponding software is not resident.
+       C-MOS memory destroyed.
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Check whether the following file is resident:
+         LCM-&gt;LOB, tape conversion
+         LCM -&gt;LOB, data input/output
+       Reinstall the control software.
+       Replace C-MOS memory.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5275"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5275</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Restart command</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       The restart command for sequence restart operation in the
+       automatic mode is wrong (See the code below.).
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT>
+       1-&gt;Commanded value is greater than  99999999.
+       2-&gt;No sequence number or block counter designated
+       3-&gt;The data exceeding 9999 has been specified for the number
+          of repetitions.
+       4-&gt;A character other than &quot;,&quot; is specified following
+          a sequence number or a block counter.
+       <FONT color = "RED">[Probable Faulty Locations]</FONT> Operation error
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Input the data in accordance with the specification given
+       in the Instruction Manual.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5276"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5276</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Tool layout execution</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       An error occurred during tool layout processing.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT>
+       1-&gt; Not in the automatic mode; in alarm state;
+           independent A/B mode; main program and schedule program
+           is not selected.
+       2-&gt; Error occurred or the control is reset during tool layout
+           processing.
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       Mode setting is wrong or program is not selected.
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Tool layout processing is allowed in the automatic mode,
+       after the selection of the program and not in the independent
+       A/B mode.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5277"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5277</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Gauging data print execution</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       An attempt is made to print a machining program using
+       a command such as LIST other than the command used for gauging
+       data printout while gauging data is being printed.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT> 1
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Do not print any machining program while gauging data is being
+       printed out.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5278"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5278</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">MS-DOS</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       Errors described with the following codes occurred in floppy
+       input-output function (MS-DOS format).
+       <FONT color = "RED">[Character-string]</FONT> Varies depending on the indicated code.
+       <FONT color = "RED">[Code]</FONT>
+       1-&gt; The designated command character (function) is not found.
+       2-&gt; Command syntax error
+       3-&gt; The MS-DOS file is designated in wrong format.
+           The file name exceeds eight characters or the extension
+           name exceeds three characters.
+           A wild card is used for designation of the path name.
+           The path name exceeds 47 characters.
+       4-&gt; A device is not designated, or designated in wrong format.
+       5-&gt; The designated path is not found.
+       6-&gt; The OSP file name is wrongly designated.
+           The file name exceeds 16 characters or the extension name
+           exceeds three characters.
+           An illegal character is used for designation of file name.
+       7-&gt; The output file name for copying is not designated,
+           or designated using &quot;*&quot; or &quot;?&quot;.
+       8-&gt; Option code is wrongly set.
+       9-&gt; The file is not MS-DOS formatted.
+       A-&gt; The output file is a system file or a hidden file.
+       B-&gt; Copying between OSP files or between MS-DOS files is
+           attempted.
+       C-&gt; The MS-DOS formatted file cannot be opened.
+       D-&gt; The floppy does not have enough storage area.
+       E-&gt; The file name includes illegal characters.
+       <FONT color = "RED">[Probable Faulty Locations]</FONT> Designation error
+       <FONT color = "RED">[Measures to Take]</FONT>
+       1-&gt; Enter the command character using function keys.
+       2-&gt; Correct the command.
+       3-&gt; Correctly enter the path name and the file name of
+           the MD-DOS file.
+       4-&gt; Designate the device name.
+       5-&gt; Correctly enter the path name, and check if the designated
+           path (directory) exists.
+       6-&gt; After copying, correctly enter the OSP file name.
+       7-&gt; Correctly enter the output file name.
+       8-&gt; Correctly enter the applicable option code.
+       9-&gt; Use the MS-DOS formatted floppy disk.
+       A-&gt; Change the output device name for copying.
+       B-&gt; Change the device name for copying.
+       C-&gt; Since the MS-DOS formatted file is defective,
+           format the file again.
+       D-&gt; Prepare a new floppy disk or delete the file.
+       E-&gt; Do not use MS-DOS formatted files of which file name
+           includes kana or kanji (Jpanese or Chinese characters).
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5279"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5279</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">System coupling mode</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       Program selection, program search (including cursor-search),
+       restart, schedule program selection, or schedule program
+       search is attempted during automatic system operation mode.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT> None
+       <FONT color = "RED">[Probable Faulty Locations]</FONT> Operation error
+       <FONT color = "RED">[Measures to Take]</FONT> Select the independent operation mode.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5280"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5280</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Y-axis control mode</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       Illegal operations described with the following codes have
+       been conducted in Y-axis control mode.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT>
+       None-&gt; Setting or calculation of YS-/X-axis angle data are
+              attempted without selecting Y-axis control mode.
+       5-&gt;Automatic decision is attempted in the graphic area
+          in Y-axis control mode.
+       6-&gt;Tool layout is attempted in Y-axis control mode.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5281"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5281</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Spindle control parameter</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       Abnormality occurred in rewriting spindle control parameter
+       or M-tool spindle parameter.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT> None
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       * Spindle or M-tool spindle stop command is not output during
+         execution of the main program.
+       * Manual feed mode is selected.
+       * Reset sequence is in progress.
+       * Emergency stop is effective.
+       * C-axis rotation command is designated.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5283"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5283</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Check address</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       To display the contents of a variable shown on the first page
+       of the CHECK display, the address of that variable is set.
+       An error is made in this setting.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT>
+       1-&gt;Check number is other than 1 - 9.
+       2-&gt;The address number and address are delimited by a comma.
+       3-&gt;The address to be checked has exceeded the maximum address.
+       4-&gt;The address is odd for other than Bit data.
+       5-&gt;The address is designated exceeding its effective range.
+       <FONT color = "RED">[Probable Faulty Locations]</FONT> Operation error
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Review the data in reference to the alarm code displayed and
+       set the data again correctly.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5284"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5284</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Tool item code not same</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       When selecting tool item code for the second position of
+       the ATC, its kind is different from the code designated
+       for the first position.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT> None
+       <FONT color = "RED">[Probable Faulty Locations]</FONT> Operation error
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Set classification code so that there is no inconsistency
+       between the first and the second positions.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5285"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5285</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">No X-axis data</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       In the sub-spindle model, X-axis machine zero offset is
+       attempted.  Or, in the pick-off spindle model, X-axis machine
+       zero offset on A side is attempted.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT> None
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5286"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5286</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">No Z-axis data</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       In the pick-off spindle model, Z-axis machine zero offset
+       on A side is attempted.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT> None
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5287"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5287</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">No Y-axis data</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       Setting or calculation of overload monitoring data for Y-axis
+       is attempted on B side.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT> None
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5288"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5288</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">No CT-axis data</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       It is tried to set CT-axis data in a place where such data
+       does not exist.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT> None
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5289"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5289</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">No B-side data</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       It is tried to set, add, or calculate the data not existing
+       on turret B side.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT> None
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5290"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5290</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">No C-axis data</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       An attempt is made to set C-axis data for items which do not
+       require setting C-axis data at the data setting screens
+       in the ZERO SET mode, TOOL DATA SET mode, and PARAMETER SET
+       mode.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT> None
+       <FONT color = "RED">[Probable Faulty Locations]</FONT> Operation error
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Do not set C-axis data at items which do not require setting.
+       <FONT color = "RED">[Related Specifications]</FONT> Multi-machining model
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5291"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5291</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">No M-axis data</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       An attempt to set load monitoring data for M-axis on B-turret
+       side has been made.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT> None
+       <FONT color = "RED">[Probable Faulty Locations]</FONT> Operation error
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5292"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5292</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">No W-axis data</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       An attempt is made to set W-axis data for items which do not
+       require setting W-axis data at the data setting screens in
+       the ZERO SET mode, TOOL DATA SET mode, and PARAMETER SET mode.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT> None
+       <FONT color = "RED">[Probable Faulty Locations]</FONT> Operation error
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Do not set W-axis data at items which do not require setting.
+       <FONT color = "RED">[Related Specifications]</FONT> Tow-along tailstock
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5293"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5293</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">TOOL KIND command</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       An attempt is made to execute a tool kind command from other
+       than TOOL FORM selection page.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT> None
+       <FONT color = "RED">[Probable Faulty Locations]</FONT> Operation error
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Execute the tool kind command after displaying the TOOL FORM
+       selection screen.
+       <FONT color = "RED">[Related Specifications]</FONT> Graphic
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5294"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5294</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">INIT command</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       An attempt to execute the INIT command although the display
+       is not the TOOL LIFE MANAGEMENT ***TOOL INFORMATION TABLE***.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT> 3
+       <FONT color = "RED">[Probable Faulty Locations]</FONT> Operation error
+       <FONT color = "RED">[Measures to Take]</FONT> 
+       Designate the INIT command on the TOOL LIFE MANAGEMENT
+        ****TOOL INFORMATION TABLE**** screen.
+       <FONT color = "RED">[Related Specifications]</FONT>
+       Tool life management
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5295"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5295</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Tool entry</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       A tool number not registered in a tool group has been
+       designated.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT> Hexadecimal number of designated tool number
+       <FONT color = "RED">[Probable Faulty Locations]</FONT> Operation error
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Designate the tool number registered in the tool group,
+       or register the tool number to be designated to
+       the tool group.
+       <FONT color = "RED">[Related Specifications]</FONT> Tool life management
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5296"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5296</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">No inductosyn data</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       At the Inductosyn connection compensation data setting screen,
+       an attempt is made to set the connection compensation data
+       for the axis for which setting is impossible (Inductosyn not
+       used).
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT> None
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Setting should be made only for the axis on which Inductosyn
+       is used.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5297"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5297</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Gauging-CAL command</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       Calculation command for gauging processing is wrong.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT>
+       None-&gt;TOOL OFFSET page is not selected.
+       2-&gt;Cursor is not at the tool offset position.
+       4-&gt;Numbers designating the sensor contact surface are other
+          than 1 or 2.
+       5-&gt;Can't execute Gauging-CAL in the current spindle mode
+          selected for the turret.
+       <FONT color = "RED">[Probable Faulty Locations]</FONT> Operation error
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Display the TOOL OFFSET page and locate the cursor at
+       the required tool offset position, then input the command
+       correctly.
+       Change mode from the spindle mode selected for the turret.
+       <FONT color = "RED">[Related Specifications]</FONT> Tool gauging
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5298"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5298</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Load monitor time set</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       Setting value exceeds the setting range or a different format
+       is used.
+       <FONT color = "RED">[Character-string]</FONT> Data to be set
+       <FONT color = "RED">[Code]</FONT>
+       None-&gt;Data setting is attempted outside the setting range.
+       Others-&gt;Wrong format
+       <FONT color = "RED">[Probable Faulty Locations]</FONT> Operation error
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Re-set the data after confirming the format or setting range.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5299"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5299</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Load monitor execute</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       Monitoring time had set in program practice.
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       1) Operation error
+       <FONT color = "RED">[Measures to take]</FONT>
+       1) When it is not in program practice, it establishes
+          monitoring time.
+        
+</PRE>
+<!-- ##' -->
+</BODY>
+</HTML>
+
+<HTML>
+<BODY>
+<A NAME="5300"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5300</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">ATC magazine tool registrate</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       Invalid tool data is set on the *ATC MAGAZINE INFORMATION* or
+       *ATC TOOL INFORMATION* setting screen in the tool data setting
+       mode.
+       <FONT color = "RED">[Code]</FONT>
+       1-&gt;Tool data is set on a magazine pot specified as a dummy
+          pot.
+       2-&gt;Tool data is set on an occupied pot.
+       3-&gt;Tool data is set though the designated type of tool cannot
+          be mounted on the turret.
+       4-&gt;Concerning TOOL-ID specification, it was about to set a tool
+          of tool kind LL on turret except for turnning tool
+          installation turret.
+       <FONT color = "RED">[Measures to Take]</FONT>
+       1)Judge the cause of error from the above code and register
+         the tool data again.
+       <FONT color = "RED">[Probable Faulty Locations]</FONT> ATC Instruction Manual
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5301"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5301</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">ATC tool number input format</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       Invalid tool data is entered on the *ATC MAGAZINE INFORMATION*
+       or *ATC TOOL INFORMATION* setting screen in the tool data
+       setting mode.
+       <FONT color = "RED">[Code]</FONT>
+       1-&gt;A neguative number is used to specify a tool number.
+       2-&gt;A decimal number is used to specify a tool number.
+       3-&gt;Tool data is not correctly delimited by commas.
+       4-&gt;The tool type code is other than L, M, DT, S, or ML.
+       5-&gt;The tool diameter code is other than B, BR, or E.
+       <FONT color = "RED">[Measures to Take]</FONT>
+       1)Judge the cause of error from the error code and correctly
+         enter the tool data again.
+       <FONT color = "RED">[Probable Faulty Locations]</FONT> ATC Instruction Manual
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5302"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5302</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">ATC tool number set</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       It has already tried to set the registered tool number to
+       another tool on tool ID information screen of the tool data
+       setting mode. 
+       <FONT color = "RED">[Code]</FONT>
+       1-&gt; The same worker as tool that has already been installed in
+           turret lathe, readystation, and magazine, etc.
+           It tried to set the tool number (tool group number + serial
+           number). 
+       <FONT color = "RED">[Measures to Take]</FONT>
+       When the tool number is set, an unused tool number is set.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5303"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5303</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">ATC sequence no. change N.G.</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       An attempt was made to set the sequence number which is not
+       present in the ATC sequence flow.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT> None
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5304"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5304</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Tool ID data change N.G.</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       Writing, and compulsion wrote and did to on magazine tool ID
+       information screen as for the compulsion of tool ID data while
+       not possible to be done. Or, it wrote and the communication
+       fault etc. occurred in compulsion during execution. 
+       <FONT color = "RED">[Code]</FONT>
+       1-&gt; Compulsion wrote and did with the magazine manual operation
+           interruption cutting and in the magazine crack mobilization
+           work or the magazine manual operation detaching pin not on
+           the retreat edge. 
+       2-&gt; It wrote and the communication fault etc. occurred in
+           compulsion during execution.
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Execution condition compulsion writing is tuned, and compulsion
+       does writing.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5305"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5305</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">File format</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       The tape data read using INPUT or VERIFY command of the data
+       input/output function is wrongly formatted.
+       <FONT color = "RED">[Character-string]</FONT>
+       1-&gt;Records (blocks) in the file
+       2-&gt;The file name does not start with an alphabet or the data
+          has too many number of digits.
+       3-&gt;There is no data identifier (Tn, On, or Pn) at
+          the beginning of the data.
+       4-&gt;There is no data number (Nn) before or after the record
+          data identifier.
+       5-&gt;The tape data includes invalid data.
+       6-&gt;This model does not permit designation of a turret.
+       7-&gt;The data identifier (Tn, On, or Pn) is not correct.
+       8-&gt;The data number (Nn) is not correct.
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Correct the erroneous record data.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5306"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5306</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Data command</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       The data identifier is wrongly specified in designation of
+       the data to be output using the data input/output function.
+       <FONT color = "RED">[Character-string]</FONT> Specified data identifier
+       <FONT color = "RED">[Code]</FONT>
+       1-&gt;Wrong command format
+       2-&gt;The data identifier is not T, O, or P.
+       3-&gt;The specified data identification number is not included
+          in the data to be output.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5307"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5307</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Input data overflow</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       Too large or too small data was entered into the NC unit using
+       the data input/output function.
+       <FONT color = "RED">[Character-string]</FONT> Erroneous record
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       1)Punching error in data output
+       2)Output data setting error
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       Correct the wrong output data and punch again.
+       Then, make the NC read the tape.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5308"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5308</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Stroke end limit over</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       The variable limit data entered using the data input/output
+       function exceeds the travel limit.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5309"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5309</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Time data</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       Wrong time data was entered using the data input/output
+       function.
+       <FONT color = "RED">[Code]</FONT>
+       1-&gt;The [hour: minute] data is not correct.
+       2-&gt;The [hour: minute: second] data is not correct.
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       Faulty tape or faulty tape reader
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Check the tape. If the tape is faulty, check the punch and
+       punch a tape again.
+       If not, check the punch and make the NC read the tape again.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5312"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5312</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Output data overflow</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       Too large data was output using the data input/output
+       function.
+       <FONT color = "RED">[Probable Faulty Locations]</FONT> Data setting error
+       <FONT color = "RED">[Measures to Take]</FONT> Reset the data.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5313"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5313</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Output data underflow</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       Too small data was output using the data input/output
+       function.
+       <FONT color = "RED">[Probable Faulty Locations]</FONT> Data setting error
+       <FONT color = "RED">[Measures to Take]</FONT> Reset the data.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5314"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5314</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Schedule program select</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       A schedule program was selected and started in the linked
+       operation mode.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5315"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5315</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">During adaptive control mode</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       A SEQUENCE SEARCH or RESTART command was given in the adaptive
+       control mode. Or, sequence search was attempted during remote
+       buffer operation. Schedule program select or schedule program
+       search was attempted without specifying
+       any operation file name.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5316"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5316</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Can not set in turret rotation</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       Turret control parameters are changed during turret rotation.
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Change the turret control parameters after completion of
+       turret rotation.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5317"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5317</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Remote buffer operation mode</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       The sequence search function was activated during remote
+       buffer operation.
+       Schedule program select or schedule program sequence search
+       was attempted without specifying any operation file name.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5318"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5318</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">ATC tool information</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5319"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5319</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">No YSaxis data</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       Illega YI axis data was designated.
+       <FONT color = "RED">[Code]</FONT>
+       None-&gt;Load monitor data had set about B side YI axis.
+          1-&gt;Backlash, a encoder offset, a encoder connection
+             compensation, droop data had set.
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       Operation error
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5320"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5320</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">MULTI PIP file name</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       The transfer file name was wrongly specified.
+       <FONT color = "RED">[Character-string]</FONT>
+       Specified file name
+       <FONT color = "RED">[Code]</FONT>
+       1-&gt; An output file name was specified.
+       2-&gt; Punching failed because the specified file name was not
+           found.
+       3-&gt; No file was sent though a file name was specified for
+           reading.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5321"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5321</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Library size overflow</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       The specified library program buffer size exceeds one program
+        capacity of the machine specification.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5322"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5322</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Library stack overflow</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       The number of subprograms registered in the library program
+       exceeds 65.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5323"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5323</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">No sub program file</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       The subprogram file specified for registration in the library
+       program was not found.
+       <FONT color = "RED">[Character-string]</FONT>
+       File name not found
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5324"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5324</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Registered program</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       An existing subprogram name was registered as a library
+       program.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5325"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5325</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">MSB program load automatically when power on</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       The subprogram name specified for registration in the library
+       program is the same with the subprogram name of MSB file.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5326"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5326</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Input workpiece name</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       An alarm occurred in setting or checking a workpiece name.
+       <FONT color = "RED">[Code]</FONT>
+       1-&gt; An existing workpiece name was set with machining
+           parameters.
+       2-&gt; The workpiece name is not set in the cursorlocated work
+           table.
+       3-&gt; The workpiece name in the cursorlocated work table is not
+           found in the workpiece names set with machining
+           parameters.
+       4-&gt; The workpiece name to be set does not exist.
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       No workpiece name is set in the work table indicated by the
+       cursor. Or, the workpiece name set with machining parameters
+       do not match the workpiece name in the work table.
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Set the workpiece name in the work table.
+       Match the workpiece name in the work table with the workpiece
+       name set with machining parameters.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5327"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5327</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Consecutive processing schedule program</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       The NC received a program name that cannot be converted into
+       a part program for the required machining by a PSELECT command
+       from the schedule program.
+       <FONT color = "RED">[Code]</FONT>
+       1-&gt; The part program name specified by a PSELECT command from
+           the schedule program is other than WT1.MIN to WT20.MIN.
+       2-&gt; Though the schedule program issues a PSELECT command,
+           the specified workpiece name is not set in the work table,
+           or the set workpiece name is not present in the part
+           program.
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       1)Schedule program is faulty.
+       2)No workpiece name is set in the specified work table.
+       3)The workpiece name in the work table does not match the work
+         piece name set with machining parameters.
+       <FONT color = "RED">[Measures to Take]</FONT>
+       1)Correct the part program.
+       2)Match the workpiece name in the work table with
+         the workpiece name set with machining parameters.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5328"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5328</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Consecutive processing work table copy</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       Invalid operation was attempted using the line copy/insert
+       function.
+       1-&gt;Line insertion was attempted though the buffer was empty.
+       2-&gt;After line copy, a parameter was changed before line
+          insertion.
+       3-&gt;Line copy or insertion was attempted without locating
+          the cursor at a work table.
+       4-&gt;An invalid number was entered to specify the number of
+          lines to be copied.
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       Operation error in line copy or insertion
+       <FONT color = "RED">[Measures to Take]</FONT>
+       1)After line copy, insert the lines without changing
+         parameters.
+       2)Locate the cursor at the work table before line copy or
+         insertion.
+       3)Specify the number of lines to be copied in the range from
+         0 to 19.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5329"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5329</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">MCS Time out error</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       When the MDR command was issued, the corresponding axis or
+       the corresponding channel was communicating with the MCS and
+       the communication has not completed in 10 seconds.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5330"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5330</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Program selection bad mode</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       Program selection was attempted in other than the
+       AUTO mode.
+       <FONT color = "RED">[Code]</FONT>
+       0 -&gt; Program selection was attempted in other than
+            the AUTO mode.
+       1 -&gt; For the program selection special specification,
+            program selection was attempted using a function key.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5331"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5331</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">TOOL DATA SET</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       In the TOOL ID specification, an error occurred during data
+       setting using the *TOOL ID DATA* setting screen or
+       the *TOOL LIFE MANAGEMENT FUNCTION* setting screen in the tool
+       data setting mode.
+       <FONT color = "RED">[Code]</FONT>
+       1 -&gt; Data setting is made for items other than a tool number
+            for a magazine pot before a tool number is not set.
+       2 -&gt; In the setting of tool ID, setting other than &quot;Y&quot; and &quot;N&quot;
+            is made.
+       3 -&gt; Large-diameter tool category setting is made for
+            a magazine pot where tool data is already set to make it
+            a dummy pot. Or the data outside the setting range is set.
+       4 -&gt; For the USE tool setting on the *TOOL LIFE MANAGEMENT
+            FUNCTION*, setting of other than &quot;U&quot; or &quot;*&quot; is made.
+       5 -&gt; For the USE tool setting on the *TOOL LIFE MANAGEMENT
+            FUNCTION*, USE setting is made for a tool for which a
+            group number is not set.
+       10-&gt; The kind of the tool outside a set range was specified.
+            The multi edge tool was specified without the multi edge
+            tool specification. Or, the multi edge tool was specified
+            on B side. 
+       11-&gt; The number of edges was specified outside a set range.
+            Or, the value of two or more was specified with a standard
+            tool for a number of edges.
+       12-&gt; The size of the tool outside a set range was specified.
+       13-&gt; The edge installation corner outside a set range was
+            specified. Or, it specified it for the edge installation
+            corner with a standard tool excluding.
+       14-&gt; The tool group number of the registered tool, the serial
+            number, the tool kind, the number of edges, and the edge
+            installation corner have been changed directly. 
+       15-&gt; It tried to register ten multipoint tools or more. Or, it
+            tried to register 200 standard tools or more. 
+       16-&gt; It started changing the tool kind of the multi edge tool
+            to other kinds.
+       17-&gt; The tool kind is not a multi edge tool for the multi edge
+            tool the specified tool group number.
+            Or, the tool kind is a multi edge tool for a standard tool
+            the specified tool group number.
+       18-&gt; The tool data was set with the tool data was not able to
+            be stored.
+       19-&gt; 0 was specified only for either the tool group number or
+            the tool serial number.
+       20-&gt; The return magazine outside a set range was specified.
+            Or, the return magazine was specified on B side.
+       <FONT color = "RED">[Measure to Take]</FONT>
+       The tool data within the range is set. 
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5333"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5333</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">main program select</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       Lack of tool was found in a tool check
+       at the time of the main program selection.
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       The tool which is appointed as a tool list is the life span on
+       nowhere of Turret/Ready station/Magazine and does not exist.
+       <FONT color = "RED">[Measures to take]</FONT>
+       Set the tool which is indicated on the lack of tool list which
+       is not into Turret/Ready station/Magazine.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5334"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5334</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">file select</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       An file extension name of an appointed tool list file is
+       inappropriate. Or, a tool list file does not exist.
+       <FONT color = "RED">[Code]</FONT>
+       1-&gt;In tool list selection, it is different from the name which
+          an file extension name of an appointed tool list file has
+          appointed in the parameter.
+       2-&gt;An appointed tool list file does not exist in the tool check
+          which is not sufficient at the time of tool list selection
+          and/or program selection.
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       Set data of the parameter has mistaken it.
+       Or a making mistake of a tool list file.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5335"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5335</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">ATC operation</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       It carried out a tool list selective command in ATC action.
+       <FONT color = "RED">[Code]</FONT>
+       None
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5336"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5336</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Tool list format</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       A format of a tool list is inappropriate.
+       <FONT color = "RED">[Code]</FONT>
+       1-&gt;When the main program file is appointed as a tool list file,
+          &quot;UTTS&quot; does not exist in the main program file.
+       2-&gt;When the main program file is appointed as a tool list file,
+          &quot;UTTE&quot; does not exist in the main program file.
+       3-&gt;In a tool list file, there is G code command except for
+          G13/G14.
+          Or, there is command except for TL/TG in a tool list file.
+       4-&gt;Concerning 2 saddle machines, TL/TG command was performed
+          by a tool list file by the condition which does not order
+          a saddle.
+       5-&gt;It is not put to TL/TG command in terms of &quot;=&quot;.
+       6-&gt;A number of TL/TG command is bad.
+       7-&gt;There was a description not permitted to the tool list. 
+       8-&gt;There were 640 more TL/TG instructions of the tool list in
+          total. Or, there is not any.
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       A making mistake of a tool list file.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5337"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5337</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">COMMON VARIABLE VARIABLE NAME SETTING ERROR</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       A setting error of a variable name
+       A format of a variable name is not right concerning setting of
+       a variable name of common variable.
+       Or, a variable name is not found out concerning a search of
+           a variable name.
+       <FONT color = "RED">[Code]</FONT>
+       1-&gt;It was about to set a variable name of more than 5 letters.
+       2-&gt;It was about to set the variable name which already exists
+          and an identical variable name.
+       3-&gt;It was about to set an identical system variable and
+          variable name.
+       4-&gt;It was about to set a variable name only a numeral.
+       5-&gt;A variable name of unregistration
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5338"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5338</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">TCP/IP initial</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       An error occurred in the initial processing for TCP/IP
+       executed when the power is supplied.
+       <FONT color = "RED">[Object]</FONT>None
+       <FONT color = "RED">[Character-string]</FONT>None
+       <FONT color = "RED">[Code]</FONT>XX
+       XX=22-&gt;Parameter wrong
+         =06-&gt;TCP/IP initial time out
+         =14-&gt;DNC-T spec is OFF(on NC defined)
+         =11-&gt;DNC-T spec frag is OFF(in parameter-file)
+         =02-&gt;Parameter-file open-error
+         =09-&gt;Parameter-file read-error
+         =13-&gt;Parameter-file close-error
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       Defective hardware or API software
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Check the hardware or the software.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5339"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5339</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">DNC-RT Path name</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       Erroneous file name was specified in the program selection
+       by DNC-RT.
+       <FONT color = "RED">[Object]</FONT>None
+       <FONT color = "RED">[Character-string]</FONT>None
+       <FONT color = "RED">[Code]</FONT>X
+       X=1-&gt;Abnormal file name
+        =2-&gt;Abnormal extension code
+        =3-&gt;Combination of device name, path name, and file name
+            is longer than 120 characters.
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       Command line
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Check the command line
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5340"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5340</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">DNC-RT Program select</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       <FONT color = "RED">[Object]</FONT>None
+       <FONT color = "RED">[Character-string]</FONT>None
+       <FONT color = "RED">[Code]</FONT>800000XX:communication error number
+             YY      :application error number
+       XX=6F-&gt;Buffer shortage of TCP/IP driver
+          72-&gt;Descripter for TCP/IP is abnormal
+          73-&gt;Parameter for TCP/IP is abnormal
+          74-&gt;Thereis not free board on joint memory
+          75-&gt;Unconnection state
+          7B-&gt;Disregard abort
+          7D-&gt;ftp_ms_open is abnormal and end
+          7E-&gt;ftp_ms_close
+          80-&gt;ftp_ms_user
+          81-&gt;ftp_ms_pass
+          82-&gt;ftp_ms_acct
+          83-&gt;ftp_ms_delete
+          84-&gt;ftp_ms_fopen
+          85-&gt;ftp_ms_fopen_uni
+          86-&gt;ftp_ms_net_drecv_f
+          87-&gt;ftp_ms_net_dsend_f
+          88-&gt;ftp_ms_fclose
+          89-&gt;ftp_ms_abort
+          8A-&gt;ftp_ms_chdir
+          8B-&gt;ftp_ms_mkdir
+          8C-&gt;ftp_ms_rmdir
+          8D-&gt;ftp_ms_pwd
+          8E-&gt;ftp_ms_cdup
+          8F-&gt;ftp_ms_dopen
+          90-&gt;ftp_ms_dread
+          91-&gt;ftp_ms_dclose
+          97-&gt;IP address error
+          98-&gt;No IP address
+          99-&gt;Interruption by time-out
+          9A-&gt;Connected interrupted by remote host
+          9B-&gt;Abnormal termination in initialization of OS (MORE)
+              on TCP/IP board
+          9C-&gt;Abnormal termination in initialization of packet
+              driver on TCP/IP board or TCP/IP module
+          9D-&gt;Abnormal termination in initialization of TELNET
+              client module on TCP/IP board
+          9E-&gt;Abnormal termination in initialization of TELNET
+              server module on TCP/IP board
+          9F-&gt;Abnormal termination in initialization of FTP module
+              on TCP/IP board
+          A0-&gt;Abnormal termination in initialization of socket
+              interface module on TCP/IP board
+          A1-&gt;Abnormal termination in initialization of TCP/IP
+              board
+       YY=13-&gt;Illegal channel number
+          16-&gt;Invalid parameter for initialization,
+              Not started up, or Invalid program name
+          11-&gt;Already started up
+          06-&gt;Time-out in initialization of TCP/IP board
+              (TCP/IP board not operable)
+              Device which cannot be renamed, Device of which
+              protection cannot be removed
+              Device of which file system information cannot be
+              obtained, Unknown(unsupported) command
+          0D-&gt;Communication board not mounted
+          02-&gt;Program not found
+          08-&gt;Execution failed
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       Application error, file name
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Check the communication hardware, software, or program
+       selection format.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5341"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5341</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Thermal deviation compensation executing</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       Thermal deviation parameter was set although the thermal
+       deviation compensation function was active.
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       1-&gt;Operation error
+       <FONT color = "RED">[Measures to Take]</FONT>
+       1)Set the thermal deviation parameters after turning the
+         COMPENSATION SW &quot;NO&quot;.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5342"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5342</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Set condition</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       YES is not set at the selected sensor.
+       Or, NO is set at the sensor channel selected as the first
+       temperature channel.
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       1-&gt;Operation error
+       <FONT color = "RED">[Measures to Take]</FONT>
+       1)Select the sensor number to which YES has been set.
+         Or, set YES at the sensor channel to be selected.
+       2)Change the channel of the sensor selected as the first
+         temperature channel.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5344"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5344</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">DATA DEVELOP IMPOSSIBLE</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       Cam profile development is executed while a main program is
+       executed.
+       <FONT color = "RED">[Character-string]</FONT>None
+       <FONT color = "RED">[Code]</FONT>7
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       Operator's error
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Reset the NC before executing the cam profile development.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5345"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5345</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">CAM EXECUTE DATA FILE LOAD</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       When loading a file, the designated machining file is not
+       found.
+       <FONT color = "RED">[Character-string]</FONT>None
+       <FONT color = "RED">[Code]</FONT>1
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       Operator's error
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Check whether the cam execute data file exists or not by
+       displaying the directory.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5346"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5346</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">NO CAM EXECUTE DATA</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       When storing a file, the cam execute data does not exist in
+       the RAM.
+       <FONT color = "RED">[Character-string]</FONT>None
+       <FONT color = "RED">[Code]</FONT>
+       1-&gt;No cam execute data, to be stored, in the RAM.
+       2-&gt;File name for storing a file is not designated.
+       3-&gt;File extension name for storing a file is not designated.
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       Operator's error
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5347"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5347</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">NO CAM DEFINE DATA FILE</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       When developing the cam profile, the designated cam define
+       data file(LSF file) does not exist in the MD1.
+       <FONT color = "RED">[Character-string]</FONT>None
+       <FONT color = "RED">[Code]</FONT>1
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       Operator's error
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Check whether the cam define data file exists or not by
+       displaying the directory.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5348"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5348</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">CAM DEFINE DATA FILE FORMAT</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       Format error with the cam difine data file(LSF file).
+       <FONT color = "RED">[Character-string]</FONT>None
+       <FONT color = "RED">[Code]</FONT>
+       1-&gt;No data in the cam define data file(LSF file).
+       2-&gt;No &quot;XCAM&quot; at the beginning of the file.
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       Error in creating the cam define data file(LSF file).
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Correct the cam define data file(LSF file).
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5349"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5349</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">CAM EXECUTE DATA FORMAT</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       <FONT color = "RED">[Character-string]</FONT>None
+       <FONT color = "RED">[Code]</FONT>
+        1-&gt;No &quot;CAM1&quot; written in sector 0.
+        2-&gt;The &quot;@BC&quot; in sector 0 is not &quot;$0000&quot;.
+        4-&gt;Cam execute data file(command data) is not complete.
+        5-&gt;Cam execute data file(command data) is too large.
+        6-&gt;Cam execute data file(command data) is too small.
+        7-&gt;Cam execute data file(compensation data) is not complete.
+        8-&gt;Cam execute data file(compensation data) is too large.
+        9-&gt;Cam execute data file(compensation data) is too small.
+       12-&gt;An extension of the synchronous mode A file is not &quot;EXF&quot;.
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       Creation error of the cam execute data file.
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Create the cam execute data file again.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5350"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5350</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">SYNCHRONOUS MODE EXECUTE IMPOSSIBLE</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       Any of the correction mode, profile develop mode, or file load
+       mode is set ON while in the synchronous mode.
+       <FONT color = "RED">[Character-string]</FONT>None
+       <FONT color = "RED">[Code]</FONT>None
+       1-&gt; The correction mode is set ON while in the synchronous
+           mode.
+       2-&gt; The profile develop mode is set ON while in the
+           synchronous mode.
+       3-&gt; The file load mode is set ON while in the synchronous mode.
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       Operator's error
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Set ON any of these modes after the completion of the
+       synchronous mode.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5351"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5351</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">NOCAM EXECUTE DATA FILE NAME</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       There is not file name of the cam execute data file(EXF file)
+       following the FCALL in the program.
+       <FONT color = "RED">[Character-string]</FONT>None
+       <FONT color = "RED">[Code]</FONT>1
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       Program error
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Write a file name of the cam execute data file(EXF file)
+       following the FCALL command in the program.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5352"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5352</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">CAM EXECUTE DATA FILE NUMBER OVER</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       More than 10 kinds of the cam execute data file(EXF file)
+       are designated using the FCALL command in a program.
+       <FONT color = "RED">[Character-string]</FONT>None
+       <FONT color = "RED">[Code]</FONT>1
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       Program error
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Review the program.
+       Reduce the number of FCALL commands used in a program for
+       16 or less kinds of files.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5353"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5353</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">FCALL COMMAND NUMBER OVER</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       Cam execute data file(EXF file) is called 128 or more time
+       using the FCALL command in a program.
+       <FONT color = "RED">[Character-string]</FONT>None
+       <FONT color = "RED">[Code]</FONT>1
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       Program error
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Review the program.
+       Reduce the number of FCALL commands used in a program to
+       128 or less.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5354"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5354</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">NO CAM EXECUTE DATA FILE</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       When selecting a program, the cam execute data file(EXF file)
+       designated with the FCALL command is not found in the MD1.
+       <FONT color = "RED">[Character-string]</FONT>None
+       <FONT color = "RED">[Code]</FONT>None
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       Program error
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Review the program.
+       Check the first stored in the MD1.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5355"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5355</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">CAM EXECUTE DATA PARAMETER NOT SAME</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       The parameters in the cam execute data file do not agree with
+       the parameters og the machine.
+       <FONT color = "RED">[Character-string]</FONT>None
+       <FONT color = "RED">[Code]</FONT>None
+       1-&gt; Disagreement of spindle PG pulse number.
+       2-&gt; Disagreement of spindle PG resolution.
+       3-&gt; Disagreement of Xs-axis resolution.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5356"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5356</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Cutting parameter contents list</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       Cutting parameter contents list has illegal commands.
+       <FONT color = "RED">[Code]</FONT>
+       1-&gt;UCMS or UCME was commanded alone.
+       2-&gt;Any commands except VCMT were commanded between UCMS and
+       UCME.
+       3-&gt;VCMT command format was illegal.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5357"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5357</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Undetermined spindle APA</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       Active position(value:CD) of Main-spindle is not decided.
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Please decide Active position of Main-spindle.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5358"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5358</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Chuck coordinates unmatch</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       Chuck-barrier-data(CX/CZ) of the chuck which is not divided on
+       the side of the process-ST was about to be calculated.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5368"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5368</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Sensor channel auto setting</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       Although &quot;YES&quot; is set for the SENSOR SELECT parameter
+       &quot;AUTO SELECT&quot;, an operation that changes the setting of the
+       sensor channel was attempted.
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       1) Operation error
+       <FONT color = "RED">[Measures to Take]</FONT>
+       1) Before attempting setting of the sensor channel, set &quot;ON&quot;
+          for the SENSOR SELECT parameter &quot;AUTO SELECT&quot;.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5371"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5371</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">No B-axis data</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       Setting or calculation of overload monitoring data for B-axis
+       is attempted on B side.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT> None
+</PRE>
+<!-- ##' -->
+<A NAME="5373"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5373</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5"> Initial program load</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       An error occurred while the first 16 sectors of the program
+       which has been selected for the B, S, or M method operation
+       were being read.
+       <FONT color = "RED">[Character-string]</FONT>None
+       <FONT color = "RED">[Code]</FONT>XXXXYYYY
+       XXXX-&gt;Physical sector number involved with the error
+       YYYY-&gt;Error number (the number in the error table)
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Follow the steps indicated in the error table.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5374"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5374</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">DNC-DT Path name</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       Program selection by DNC-DT failed because of faulty file name.
+       The total characters of device name, path name, and file name
+       exceeds 120.
+       <FONT color = "RED">[Index]</FONT> None
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT>
+       1: Improper file name
+       2: Improper filename extension
+       3: Over 120 characters
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       Command line
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Review the command line.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5375"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5375</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">DNC-DT Program select</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       An alarm occurred during program selection by DNC-DT.
+       <FONT color = "RED">[Index]</FONT> None
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT> XX: application error number
+       8000000YY: communication error number
+       XX=6F: Small buffer size in TCP/IP driver
+       XX=72: Faulty descriptor transferred to TCP/IP driver
+       XX=73: Faulty parameter transferred to TCP/IP driver
+       XX=74: No empty port in the shared memory
+       XX=75: Unconnected
+       XX=7B: Abort command ignored
+       XX=7D: &quot;ftp_ms_open&quot; abnormal termination
+       XX=7E: &quot;ftp_ms_close&quot; abnormal termination
+       XX=7F: &quot;ftp_ms_type&quot; abnormal termination
+       XX=80: &quot;ftp_ms_user&quot; abnormal termination
+       XX=81: &quot;ftp_ms_pass&quot; abnormal termination
+       XX=82: &quot;ftp_ms_acct&quot; abnormal termination
+       XX=83: &quot;ftp_ms_delete&quot; abnormal termination
+       XX=84: &quot;ftp_ms_fopen&quot; abnormal termination
+       XX=85: &quot;ftp_ms_fopen_uni&quot; abnormal termination
+       XX=86: &quot;ftp_ms_net_drecv_f&quot; abnormal termination
+       XX=87: &quot;ftp_ms_net_dsend_f&quot; abnormal termination
+       XX=88: &quot;ftp_ms_fclose&quot; abnormal termination
+       XX=89: &quot;ftp_ms_abort&quot; abnormal termination
+       XX=8A: &quot;ftp_ms_chdir&quot; abnormal termination
+       XX=8B: &quot;ftp_ms_mkdir&quot; abnormal termination
+       XX=8C: &quot;ftp_ms_rmdir&quot; abnormal termination
+       XX=8D: &quot;ftp_ms_pwd&quot; abnormal termination
+       XX=8E: &quot;ftp_ms_cdup&quot; abnormal termination
+       XX=8F: &quot;ftp_ms_dopen&quot; abnormal termination
+       XX=90: &quot;ftp_ms_dread&quot; abnormal termination
+       XX=91: &quot;ftp_ms_dclose&quot; abnormal termination
+       XX=97: IP address error
+       XX=98: No IP address
+       XX=99: Interruption by time out
+       XX=9A: Disconnection command from the remote host
+       XX=9B: Abnormally terminated initialization of OS (MORE) on
+              TCP/IP board
+       XX=9C: Abnormally terminated initialization of packet driver or
+              TCP/IP module on TCP/IP board
+       XX=9D: Abnormally terminated initialization of TELNET client
+              module on TCP/IP board
+       XX=9E: Abnormally terminated initialization of TELNET server
+              module on TCP/IP board
+       XX=9F: Abnormally terminated initialization of FTP module on
+              TCP/IP board
+       XX=A0: Abnormally terminated initialization of socket interface
+              module on TCP/IP board
+       XX=A1: Abnormally terminated initialization of TCP/IP board
+       YY=13: Incorrect channel number
+       YY=16: Wrong parameters for initialization; program not started
+              up; improper program name
+       YY=11: Program already started up
+       YY=06: Time-out in initialization of TCP/IP board (TCP/IP board
+              inoperable); Device which cannot be renamed; Device of
+              which protect cannot be canceled; Device from which file
+             system information cannot be taken; Unknown (unsupported)
+              command
+       YY=0D: Communication board not mounted
+       YY=02: Program not found
+       YY=08: Execution failed
+       YY=17: Option L was specified, but a file with the same name
+              existed in MD1: and the file was protected.
+              Therefore, the file could not be deleted.
+       YY=18: Opening a file failed when a file was created in MD1:
+              by designation of option L.
+       YY=19: Closing a file failed when a file was created in MD1:
+              by designation of option L.
+       YY=20: Putting a file failed when a file was created in MD1:
+              by designation of option L.
+       YY=21: Deleting a file failed when a file was created in MD1:
+              by designation of option L.
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       Application error, faulty file name
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Correct the communication hardware, software or program
+       selection method.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5376"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5376</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">DNC-DT Preload error</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       Buffering processing at the DNC-DT was abnormal.
+       <FONT color = "RED">[Index]</FONT>None
+       <FONT color = "RED">[Character-string]</FONT>None
+       <FONT color = "RED">[Code]</FONT>
+       100-&gt;Hardware error (hard disk, etc.)
+            XXYYZZ
+            YYZZ
+       XX=
+       6F-&gt;Insufficient buffer in TCP/IP driver
+       72-&gt;Abnormal description passed to TCP/IP driver
+       73-&gt;Abnormal parameter passed to TCP/IP driver
+       74-&gt;No free port in shared memory
+       75-&gt;Not connected
+       7B-&gt;abort disregarded
+       7D-&gt;ftp_ms_open abnormal end
+       7E-&gt;ftp_ms_close abnormal end
+       7F-&gt;ftp_ms_type abnormal end
+       80-&gt;ftp_ms_user abnormal end
+       81-&gt;ftp_ms_pass abnormal end
+       82-&gt;ftp_ms_acct abnormal end
+       83-&gt;ftp_ms_delete abnormal end
+       84-&gt;ftp_ms_fopen abnormal end
+       85-&gt;ftp_ms_fopen_uni abnormal end
+       86-&gt;ftp_ms_net_drecv_f abnormal end
+       87-&gt;ftp_ms_net_dsend_f abnormal end
+       88-&gt;ftp_ms_fclose abnormal end
+       89-&gt;ftp_ms_abort abnormal end
+       8A-&gt;ftp_ms_chdir abnormal end
+       8D-&gt;ftp_ms_pwd abnormal end
+       8F-&gt;ftp_ms_dopen abnormal end
+       90-&gt;ftp_ms_dread abnormal end
+       91-&gt;ftp_ms_dclose abnormal end
+       97-&gt;IP address error
+       98-&gt;No IP address
+       99-&gt;Interrupt due to timeout
+       9A-&gt;Connection cut from remote host
+       9B-&gt;OS (MORE) initialization abnormal end on TCP/IP board
+       9C-&gt;Packet driver or TCP/IP module initialization abnormal end
+        on TCP/IP board
+       9F-&gt;FTP client module initialization abnormal end on TCP/IP
+        board
+       A0-&gt;Socket interface module initialization abnormal end on
+        TCP/IP board
+       A1-&gt;TCP/IP board initialization abnormal end
+       YY=
+       10-&gt;Buffering task start up
+       20-&gt;Buffering processing initialization
+       30-&gt;Buffering request
+       40-&gt;Getting the number of buffering completion times
+       50-&gt;Taking the buffering file
+       60-&gt;Getting the remaining number of buffering file tables
+       70-&gt;Buffering stop
+       80-&gt;Buffering file lock cancel
+       90-&gt;Buffering request
+       A0-&gt;Buffering file lock cancel
+       B0-&gt;File transfer error
+       ZZ=
+       FF-&gt;Communication error
+       02-&gt;File not found
+       03-&gt;Buffering task not started
+       05-&gt;No transfer completed file
+       08-&gt;Buffering processing not initialized.
+       Preceding buffering processing not completed
+       0D-&gt;Write-protected file
+       0E-&gt;Buffering task start-up parameter error
+       11-&gt;File already existing, buffering task already started
+       13-&gt;File device name error
+       16-&gt;Illegal initialization parameter,
+           Not started
+           Illegal program name
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5379"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5379</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">DNC Ethernet communication error</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       An error occurred with the API while the CNC is processing the
+       request from the operator.
+       <FONT color = "RED">[Index]</FONT> None
+       <FONT color = "RED">[Character-string]</FONT> API error code
+       <FONT color = "RED">[Code]</FONT> X APC involved with the error
+       1 -&gt; dncc_Connect
+       2 -&gt; dncc_Disconnect
+       3 -&gt; dncc_Open????
+       4 -&gt; dncc_Write????
+       5 -&gt; dncc_Read????
+       6 -&gt; dncc_Close????
+       7 -&gt; dncc_CheckRequest
+       None -&gt; Other API
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5380"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5380</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">DNC Host file delete failure</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       In the program operation/DNC-C mode, host computer file
+       deletion failed.
+       <FONT color = "RED">[Character-string]</FONT> Host file name of the file to be deleted
+       <FONT color = "RED">[Code]</FONT> Status notified from API
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5381"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5381</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">DNC Directory get failure</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       In the program operation/DNC-C mode, getting the current
+       directory failed.
+       <FONT color = "RED">[Character-string]</FONT> Argument of the APC
+       <FONT color = "RED">[Code]</FONT> API error code
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5382"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5382</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">DNC Directory change failure</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       In the program operation/DNC-C mode, changing the current
+       directory failed.
+       <FONT color = "RED">[Character-string]</FONT> Directory name input by the operator
+       <FONT color = "RED">[Code]</FONT> API error code
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5383"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5383</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">DNC File name</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       The file name designated from the host computer does not meet
+       the OSP file name regulation.
+       <FONT color = "RED">[Character-string]</FONT> Error file name
+       <FONT color = "RED">[Code]</FONT> None
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5384"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5384</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">DNC Directory name</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       In the program operation/DNC-C mode, an illegal directory name
+       was input when changing
+       the current directory.
+       <FONT color = "RED">[Character-string]</FONT> Directory name input by the operator
+       <FONT color = "RED">[Code]</FONT> None
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5388"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5388</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">B axis compensation file</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       An access-error happened to PBU-file for B-axis position
+       compensation. 
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5389"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5389</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Program select error</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       An error occurred in selecting program,
+       it was not executed the auto-scale-command.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5392"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5392</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Turret not index</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       Cannot calculate Turret Positioning error compensation amount,
+       Because Turret not index cut position.
+       <FONT color = "RED">[Code]</FONT>None
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       Turret not index cut position.
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Turret index cut position.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5394"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5394</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">The selected Work weight MCS data file cannot be used.</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       The selected Work weight MCS data file doesn't exist.
+       <FONT color = "RED">[Object]</FONT>None
+       <FONT color = "RED">[Code]</FONT> None
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       The Work weight MCS axis data file that did not exist on the
+       OPTIONAL PARA(LONG WORD WORD BIT) screen was selected.
+       <FONT color = "RED">[Measure to Take]</FONT>
+       The Work weight MCS axis data file that exists on the
+       OPTIONAL PARA(LONG WORD WORD BIT) screen is selected.
+       Or the	Work weight MCS axis data file of being able to
+       press the function on the WORK WEIGHT SET PARAMETER
+       screen is selected.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5395"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5395</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Coordinates Cursor Offset of MA_GAUGING.</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       When cursor moves automatically in case of touch setter
+       Manual gauging cycle, the tool offset Number are over
+       Max number of registered tools.
+       <FONT color = "RED">[Object]</FONT>None
+       <FONT color = "RED">[Code]</FONT>Cursor Offset of MA_GAUGING
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       Data setting error 
+       <FONT color = "RED">[Measure to Take]</FONT>
+       Check the Cursor Offset of MA_GAUGING.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5396"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5396</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">CAM data cannot be transmitted.</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       The cam processing data cannot be transmitted to the PSC unit. 
+       Or the cam compensation data cannot be received from the PSC unit.
+       <FONT color = "RED">[Character-string]</FONT>None
+       <FONT color = "RED">[Code]</FONT>
+       1-&gt;It is not EXF or COF or CMF file.
+       2-&gt;It failed in reading the header information. 
+       3-&gt;The head of the file cannot be detected. 
+       4-&gt;The file version or the number of spindle P.G. pulses or the
+          synchronous mode specification is wrong.
+       5-&gt;It failed in reading the command value. 
+       6-&gt;The head of the command value cannot be detected.
+       7-&gt;The command value exceeds the limit. 
+       8-&gt;It failed in reading the compensation value. 
+       9-&gt;The head of the compensation value cannot be detected.
+       10-&gt;The header information cannot be written. 
+       11-&gt;The command value cannot be written.
+       12-&gt;The compensation value cannot be written.
+       13-&gt;The file cannot be opened. 
+       14-&gt;The file cannot be closed. 
+       15-&gt;It executed it in FCALL excluding the EXF file.
+       16-&gt;It executed it in FCALLB excluding the COF or the CMF file.
+       17-&gt;It cannot be a transmission to the PSC unit.
+       18-&gt;It cannot be a transmission from the PSC unit.
+       19-&gt;The temporary file is not generable.
+       20-&gt;The file cannot be read.
+       21-&gt;The file cannot be written.
+       22-&gt;The checksum error was found. 
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       Error of cam processing data
+       Set mistake of parameter
+       Error of hardware
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Re-creation of cam processing data
+       Review of parameter setting
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5397"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5397</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Straight angle comp. data set over</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       COMP. DATA SET is over 120 in COMP. INTERVAL setting.
+       <FONT color = "RED">[Object]</FONT>None
+       <FONT color = "RED">[Character-string]</FONT>None
+       <FONT color = "RED">[Code]</FONT> None
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       Data setting error 
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Check COMP. INTERVAL.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5398"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5398</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Straight angle comp. move axis not select</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       COMP. MOVE isn't select in COMP. INTERVAL setting.
+       <FONT color = "RED">[Object]</FONT>None
+       <FONT color = "RED">[Character-string]</FONT>None
+       <FONT color = "RED">[Code]</FONT> None
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       Data setting error 
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Check COMP. MOVE.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5399"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5399</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Unchangeable parameter while machine lock</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       Unchangeable parameter while machine lock.
+       <FONT color = "RED">[Object]</FONT>None
+       <FONT color = "RED">[Character-string]</FONT>None
+       <FONT color = "RED">[Code]</FONT> None
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       The machine is in machine lock state.
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Cancel machine lock.
+        
+</PRE>
+<!-- ##' -->
+</BODY>
+</HTML>
+
+<HTML>
+<BODY>
+<A NAME="5400"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5400</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Overlapped tool offset number</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       When set the Cursor Offset of MA_GAUGING, tool offset number of
+       the 1st spinde overlapped tool offset number of the 2nd spindle
+       <FONT color = "RED">[Object]</FONT>None
+       <FONT color = "RED">[Code]</FONT>None
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       Data setting error 
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Check the Cursor Offset of MA_GAUGING.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5401"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5401</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Tool ID data delete N.G.</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       Delete tool ID data on magazine tool ID information screen as
+       for the delete tool ID data while not possible to be done.
+       <FONT color = "RED">[code]</FONT>
+       None
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Execution condition deleting data is tuned, and delete tool ID
+       data.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5402"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5402</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">WCR-axis is not a position of minus limit.</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       Z axis home position was set at not the minus limit WCR-axis
+       but the position.
+       <FONT color = "RED">[code]</FONT>
+       None
+       <FONT color = "RED">[Measures to Take]</FONT>
+       WCR-axis must set Z axis home position at the position of the
+       minus limit. 
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5403"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5403</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">It doesn't meet the requirement that can be set.</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       It doesn't meet the requirement that the home position can be set.
+       <FONT color = "RED">[code]</FONT>
+       None
+       <FONT color = "RED">[Measures to Take]</FONT>
+       VTR-A series:
+       The cross-rail is set and when M1030 is located, Z axis home 
+       position can be set.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5404"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5404</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">This spindle mode does not permit touch setter measurement.</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       The setting, addition, calculation, or the measurement operation
+       was done in the wrong spindle mode.
+       <FONT color = "RED">[Code]</FONT>
+       None-&gt; Can't execute setting/addition/calculation in the current
+              spindle mode selected for the turret.
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       Operation error
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Change mode from the spindle mode selected for the turret.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5408"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5408</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Please push emergency stop.</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       The following data was input during emergency 
+       stop was not pushed.
+        Rapid Feedrate
+        Rapid Acc.Time
+        Manu Rapid Feedrate
+        Manu Rapid Acc.Time
+        Hi-G Rapid Dec.Time
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT> None
+       <FONT color = "RED">[Probable Faulty Location]</FONT> Operation error
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Input data mentioned above during emergency stop.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5409"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5409</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Acc/dec Unit val the operation result is an invalid value. </FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       The calculation result of Acceleration/deceleration unit 
+       value was smaller than 1 
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT> None
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Change input value of Rapid Acc.Time, Manu Rapid Feedrate, 
+       Hi-G Rapid Dec.Time
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5410"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5410</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Operation result is outside a set range</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       The calculation result of Rapid Feedrate/Manu Rapid Feedrate
+       value was outside a set range 
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT> None
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Change input value of Rapid Acc.Time, Manu Rapid Feedrate,
+       Hi-G Rapid Dec.Time
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5411"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5411</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Manu Rapid Feedrate exceeded Rapid Feedrate.</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       The input value of Manu Rapid Feedrate exceeded Rapid Feedrate.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT> None
+       <FONT color = "RED">[Measures to Take]</FONT>
+       The value that doesn't exceed Rapid Feedrate is input to Manu
+       Rapid Feedrate.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5412"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5412</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">The set value exceeded the servo characteristic value.</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       The input value of Rapid Feedrate/Manu Rapid Feedrate exceeded
+       the value in servo data file.
+       The input value of Rapid Acc.Time/Manu Rapid Feedrate/Hi-G Rapid
+       Dec.Time was fewer than the value in servo data file.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT> None
+       <FONT color = "RED">[Measures to Take]</FONT>
+       The value that doesn't exceed the value in servo data file is
+       input to Rapid Feedrate/Manu Rapid Feedrate.
+       Time that is longer than the value in servo data file is input
+       to Rapid Acc.Time/Manu Rapid Feedrate/Hi-G Rapid Dec.Time.
+
+</PRE>
+<!-- ##' -->
+<A NAME="5413"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5413</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Soft Jaw process execution </FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       An attempt was made to Program selection during Soft Jaw
+       processing.
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Select program after finish Soft Jaw processing.
+
+</PRE>
+<!-- ##' -->
+</BODY>
+</HTML>
+
+<HTML>
+<BODY>
+<A NAME="5900"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5900</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Axis designate</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       The parameter or point data number selected for addition cannot
+       be set.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5901"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5901</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Inch no spec.</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       The specification is not selected.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5902"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5902</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Data range over</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       When setting a parameter, register, or point data, the setting
+       range is exceeded.
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       Operation error
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5903"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5903</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Playback impossible</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       An attempt for playback write was made for the parameter for
+       which playback write was impossible.
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       File is destroyed.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5904"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5904</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">File operation</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       Failure in file operation
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       File is destroyed.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5905"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5905</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Input data</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       Input data is incorrect.
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       Operation error
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5906"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5906</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Set impossible</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       Setting the operated parameter or register was impossible.
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       Operation error
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5907"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5907</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Check address</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       Operation error
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5908"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5908</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Number of decimal point</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       More than one decimal point is input.
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       Operation error
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5909"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5909</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Position of decimal point</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       The number of digits entered right to a decimal point is
+       incorrect.
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       Operation error
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5910"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5910</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Decimal point no spec.</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       A decimal point is input although the decimal point
+       specification is not selected.
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       Operation error
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5911"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5911</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Decimal point set impossible</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       An attempt was made to input a decimal point for a parameter
+       for which a decimal point cannot be used.
+       <FONT color = "RED">[Probable Faulty Locations]</FONT>
+       Operation error
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5912"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5912</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Check address</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       To display the contents of a variable shown on the first page
+       of the CHECK display, the address of that variable is set.
+       An error is made in this setting.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT>
+       1-&gt;Check number is other than 1 - 9.
+       2-&gt;The address number and address are delimited by a comma.
+       3-&gt;The address to be checked has exceeded the maximum address.
+       4-&gt;The address is odd for other than Bit data.
+       5-&gt;The address is designated exceeding its effective range.
+       <FONT color = "RED">[Probable Faulty Locations]</FONT> Operation error
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Review the data in reference to the alarm code displayed and
+       set the data again correctly.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5913"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5913</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">MCS Time out error</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       When the MDR command was input, the corresponding axis or
+       the corresponding channel was communicating with the MCS and
+       the communication has not completed in 10 seconds.
+        
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5914"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5914</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Transfert impossible</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5915"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5915</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Please push emergency stop.</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       The following data was input during emergency 
+       stop was not pushed.
+        Rapid Feedrate
+        Rapid Acc.Time
+        Manu Rapid Feedrate
+        Manu Rapid Acc.Time
+        Hi-G Rapid Dec.Time
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT> None
+       <FONT color = "RED">[Probable Faulty Location]</FONT> Operation error
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Input data mentioned above during emergency stop.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5916"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5916</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Acc/dec Unit val the operation result is an invalid value. </FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       The calculation result of Acceleration/deceleration unit 
+       value was smaller than 1 
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT> None
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Change input value of Rapid Acc.Time, Manu Rapid Feedrate, 
+       Hi-G Rapid Dec.Time
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5917"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5917</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Operation result is outside a set range</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       The calculation result of Rapid Feedrate/Manu Rapid Feedrate
+       value was outside a set range 
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT> None
+       <FONT color = "RED">[Measures to Take]</FONT>
+       Change input value of Rapid Acc.Time, Manu Rapid Feedrate,
+       Hi-G Rapid Dec.Time
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5918"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5918</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">Manu Rapid Feedrate exceeded Rapid Feedrate.</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       The input value of Manu Rapid Feedrate exceeded Rapid Feedrate.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT> None
+       <FONT color = "RED">[Measures to Take]</FONT>
+       The value that doesn't exceed Rapid Feedrate is input to Manu
+       Rapid Feedrate.
+        
+</PRE>
+<!-- ##' -->
+<A NAME="5919"></A>
+<TABLE border = "0" width = "100%" bgcolor = "RED">
+<TR><TD width = "10%" align = "CENTER"><FONT color = "WHITE" size = "5">5919</FONT></TD><TD width = "90%"><FONT color = "WHITE" size = "5">The set value exceeded the servo characteristic value.</FONT></TD></TR>
+</TABLE>
+<!-- ##' -->
+<PRE>
+       The input value of Rapid Feedrate/Manu Rapid Feedrate exceeded
+       the value in servo data file.
+       The input value of Rapid Acc.Time/Manu Rapid Feedrate/Hi-G Rapid
+       Dec.Time was fewer than the value in servo data file.
+       <FONT color = "RED">[Character-string]</FONT> None
+       <FONT color = "RED">[Code]</FONT> None
+       <FONT color = "RED">[Measures to Take]</FONT>
+       The value that doesn't exceed the value in servo data file is
+       input to Rapid Feedrate/Manu Rapid Feedrate.
+       Time that is longer than the value in servo data file is input
+       to Rapid Acc.Time/Manu Rapid Feedrate/Hi-G Rapid Dec.Time.
+        
+        
+</PRE>
+<!-- ##' -->
+
+
+
+</BODY>
+</HTML>
